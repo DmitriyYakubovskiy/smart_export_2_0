@@ -1,0 +1,15 @@
+{
+  "smart_export_2_0/go-file-sender/internal/config/config.go": "043e30237226d4883223127f91a2e42803dc2796a1ff142113859a5fc44c7805",
+  "smart_export_2_0/go-file-sender/internal/config/config_test.go": "9c4006633a64a64099245e5a74f39945aa5e917f9cc8a1c57f32667e9517cfaf",
+  "smart_export_2_0/go-file-sender/main.go": "3bd400c07d8a95ddbe6fb18c90c90d7f4bc0ce401fb014a0bfe56b2e7ad70e6e",
+  "smart_export_2_0/go-file-sender/main_test.go": "620fd8a695098fae5ba73772f3c62ef04e33c891d2dd9743692d7b021a7a5c8a",
+  "smart_export_2_0/python-ocr/app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "smart_export_2_0/python-ocr/app/consumer.py": "50430e1aacee719c139a0525ec59d87cadd5d543e00d4bed6d9bb5db20a88823",
+  "smart_export_2_0/python-ocr/app/main.py": "eca3659ef758aae9aed322859dbceb2f6905aba9fc165177927f178bb6eeddc1",
+  "smart_export_2_0/python-ocr/app/ocr.py": "5316607bbf59a5245d165dc8340537d202acd09b8ccd7c2758579eeb9c26cde1",
+  "smart_export_2_0/python-ocr/run.py": "80564080c68c2b0541e4ac4bd302f180e1c66c1b31df22032ca5726d46923980",
+  "smart_export_2_0/python-ocr/tests/conftest.py": "61d917466d000f076e8c5ed631cbc461fbb128df7dc8b8dfc89aed11143b7a1e",
+  "smart_export_2_0/python-ocr/tests/test_additional.py": "24c57df61a4e8972b510770af9036197a49506b8664f63079ccbaab936d6d729",
+  "smart_export_2_0/python-ocr/tests/test_ocr.py": "9353e10cf6eef6b1a9b3f7d96a9eb4b0252fbf14e76bb9daa34d95f36292e06f",
+  "smart_export_2_0/python-ocr/tests/test_pipeline.py": "76ddfc78f11ca3693a3810945cf76254154fed909cb1a6190f542a7156487632"
+}

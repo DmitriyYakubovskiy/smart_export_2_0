@@ -1,0 +1,87 @@
+{"Time":"2026-10-26T18:59:37.48797744+01:00","Action":"start","Package":"go-file-sender"}
+{"Time":"2026-10-26T18:59:37.488289285+01:00","Action":"start","Package":"go-file-sender/internal/config"}
+{"Time":"2026-10-26T18:59:37.490449382+01:00","Action":"run","Package":"go-file-sender/internal/config","Test":"TestLoadValidConfig"}
+{"Time":"2026-10-26T18:59:37.490493098+01:00","Action":"output","Package":"go-file-sender/internal/config","Test":"TestLoadValidConfig","Output":"=== RUN   TestLoadValidConfig\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.490891197+01:00","Action":"output","Package":"go-file-sender/internal/config","Test":"TestLoadValidConfig","Output":"--- PASS: TestLoadValidConfig (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.490898348+01:00","Action":"pass","Package":"go-file-sender/internal/config","Test":"TestLoadValidConfig","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.490905168+01:00","Action":"run","Package":"go-file-sender/internal/config","Test":"TestLoadMissingConfig"}
+{"Time":"2026-10-26T18:59:37.490906961+01:00","Action":"output","Package":"go-file-sender/internal/config","Test":"TestLoadMissingConfig","Output":"=== RUN   TestLoadMissingConfig\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.491074072+01:00","Action":"output","Package":"go-file-sender/internal/config","Test":"TestLoadMissingConfig","Output":"--- PASS: TestLoadMissingConfig (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.491077888+01:00","Action":"pass","Package":"go-file-sender/internal/config","Test":"TestLoadMissingConfig","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.491080392+01:00","Action":"run","Package":"go-file-sender/internal/config","Test":"TestLoadInvalidJSON"}
+{"Time":"2026-10-26T18:59:37.491082044+01:00","Action":"output","Package":"go-file-sender/internal/config","Test":"TestLoadInvalidJSON","Output":"=== RUN   TestLoadInvalidJSON\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.491407334+01:00","Action":"output","Package":"go-file-sender/internal/config","Test":"TestLoadInvalidJSON","Output":"--- PASS: TestLoadInvalidJSON (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.491419342+01:00","Action":"pass","Package":"go-file-sender/internal/config","Test":"TestLoadInvalidJSON","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.491422106+01:00","Action":"output","Package":"go-file-sender/internal/config","Output":"PASS\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.491606098+01:00","Action":"output","Package":"go-file-sender/internal/config","Output":"ok  \tgo-file-sender/internal/config\t0.003s\n"}
+{"Time":"2026-10-26T18:59:37.492235801+01:00","Action":"run","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement"}
+{"Time":"2026-10-26T18:59:37.492255491+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement","Output":"=== RUN   TestR5RejectInvalidQueueAcknowledgement\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.492262181+01:00","Action":"run","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/invalid_json"}
+{"Time":"2026-10-26T18:59:37.492264604+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/invalid_json","Output":"=== RUN   TestR5RejectInvalidQueueAcknowledgement/invalid_json\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.492266612+01:00","Action":"pass","Package":"go-file-sender/internal/config","Elapsed":0.004}
+{"Time":"2026-10-26T18:59:37.493633235+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/invalid_json","Output":"Ответ Python: not json\n"}
+{"Time":"2026-10-26T18:59:37.493666234+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/invalid_json","Output":"    contract_regression_test.go:25: invalid acknowledgement accepted as success: not json\n","OutputType":"error"}
+{"Time":"2026-10-26T18:59:37.493886246+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/invalid_json","Output":"--- FAIL: TestR5RejectInvalidQueueAcknowledgement/invalid_json (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.493896972+01:00","Action":"fail","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/invalid_json","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.493900677+01:00","Action":"run","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/error_status"}
+{"Time":"2026-10-26T18:59:37.49390256+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/error_status","Output":"=== RUN   TestR5RejectInvalidQueueAcknowledgement/error_status\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.494951659+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/error_status","Output":"Ответ Python: {\"status\":\"error\",\"document_id\":\"0123456789abcdef0123456789abcdef\"}\n"}
+{"Time":"2026-10-26T18:59:37.494975405+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/error_status","Output":"    contract_regression_test.go:25: invalid acknowledgement accepted as success: {\"status\":\"error\",\"document_id\":\"0123456789abcdef0123456789abcdef\"}\n","OutputType":"error"}
+{"Time":"2026-10-26T18:59:37.495182076+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/error_status","Output":"--- FAIL: TestR5RejectInvalidQueueAcknowledgement/error_status (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.495185031+01:00","Action":"fail","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/error_status","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.495188286+01:00","Action":"run","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/missing_document_id"}
+{"Time":"2026-10-26T18:59:37.495189948+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/missing_document_id","Output":"=== RUN   TestR5RejectInvalidQueueAcknowledgement/missing_document_id\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.496276554+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/missing_document_id","Output":"Ответ Python: {\"status\":\"queued\"}\n"}
+{"Time":"2026-10-26T18:59:37.496286429+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/missing_document_id","Output":"    contract_regression_test.go:25: invalid acknowledgement accepted as success: {\"status\":\"queued\"}\n","OutputType":"error"}
+{"Time":"2026-10-26T18:59:37.496432459+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/missing_document_id","Output":"--- FAIL: TestR5RejectInvalidQueueAcknowledgement/missing_document_id (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.496529384+01:00","Action":"fail","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement/missing_document_id","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.496536505+01:00","Action":"output","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement","Output":"--- FAIL: TestR5RejectInvalidQueueAcknowledgement (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.496660402+01:00","Action":"fail","Package":"go-file-sender","Test":"TestR5RejectInvalidQueueAcknowledgement","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.496664868+01:00","Action":"run","Package":"go-file-sender","Test":"TestControlValidQueueAcknowledgement"}
+{"Time":"2026-10-26T18:59:37.496667392+01:00","Action":"output","Package":"go-file-sender","Test":"TestControlValidQueueAcknowledgement","Output":"=== RUN   TestControlValidQueueAcknowledgement\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.497400065+01:00","Action":"output","Package":"go-file-sender","Test":"TestControlValidQueueAcknowledgement","Output":"Ответ Python: {\"status\":\"queued\",\"document_id\":\"0123456789abcdef0123456789abcdef\",\"filename\":\"valid.pdf\"}\n"}
+{"Time":"2026-10-26T18:59:37.497605785+01:00","Action":"output","Package":"go-file-sender","Test":"TestControlValidQueueAcknowledgement","Output":"--- PASS: TestControlValidQueueAcknowledgement (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.497621348+01:00","Action":"pass","Package":"go-file-sender","Test":"TestControlValidQueueAcknowledgement","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.497717373+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadMultipart"}
+{"Time":"2026-10-26T18:59:37.49772177+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadMultipart","Output":"=== RUN   TestUploadMultipart\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.49860563+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadMultipart","Output":"Ответ Python: {\"status\":\"queued\"}\n"}
+{"Time":"2026-10-26T18:59:37.498771169+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadMultipart","Output":"--- PASS: TestUploadMultipart (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.498776247+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadMultipart","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.498779211+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadBinaryIntegrity"}
+{"Time":"2026-10-26T18:59:37.498796718+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadBinaryIntegrity","Output":"=== RUN   TestUploadBinaryIntegrity\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.499446706+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadBinaryIntegrity","Output":"Ответ Python: \n"}
+{"Time":"2026-10-26T18:59:37.499580077+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadBinaryIntegrity","Output":"--- PASS: TestUploadBinaryIntegrity (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.499582941+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadBinaryIntegrity","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.499585395+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadAccepted202"}
+{"Time":"2026-10-26T18:59:37.499587328+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadAccepted202","Output":"=== RUN   TestUploadAccepted202\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.500323396+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadAccepted202","Output":"Ответ Python: {\"status\":\"test\"}\n"}
+{"Time":"2026-10-26T18:59:37.500494584+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadAccepted202","Output":"--- PASS: TestUploadAccepted202 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.500506962+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadAccepted202","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.500523517+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadSuccess200"}
+{"Time":"2026-10-26T18:59:37.50052547+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadSuccess200","Output":"=== RUN   TestUploadSuccess200\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.50176093+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadSuccess200","Output":"Ответ Python: {\"status\":\"test\"}\n"}
+{"Time":"2026-10-26T18:59:37.501870455+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadSuccess200","Output":"--- PASS: TestUploadSuccess200 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.501884266+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadSuccess200","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.50188732+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadBadRequest400"}
+{"Time":"2026-10-26T18:59:37.501889734+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadBadRequest400","Output":"=== RUN   TestUploadBadRequest400\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.502795988+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadBadRequest400","Output":"--- PASS: TestUploadBadRequest400 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.502809529+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadBadRequest400","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.502813214+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadTooLarge413"}
+{"Time":"2026-10-26T18:59:37.502814917+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadTooLarge413","Output":"=== RUN   TestUploadTooLarge413\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.503482232+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadTooLarge413","Output":"--- PASS: TestUploadTooLarge413 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.503489422+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadTooLarge413","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.503495281+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadUnavailable503"}
+{"Time":"2026-10-26T18:59:37.503497715+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadUnavailable503","Output":"=== RUN   TestUploadUnavailable503\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.504316408+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadUnavailable503","Output":"--- PASS: TestUploadUnavailable503 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.50432442+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadUnavailable503","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.504327003+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadMissingFile"}
+{"Time":"2026-10-26T18:59:37.504328816+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadMissingFile","Output":"=== RUN   TestUploadMissingFile\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.504428817+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadMissingFile","Output":"--- PASS: TestUploadMissingFile (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.504432192+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadMissingFile","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.504435597+01:00","Action":"run","Package":"go-file-sender","Test":"TestUploadConnectionFailure"}
+{"Time":"2026-10-26T18:59:37.504437229+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadConnectionFailure","Output":"=== RUN   TestUploadConnectionFailure\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.505132206+01:00","Action":"output","Package":"go-file-sender","Test":"TestUploadConnectionFailure","Output":"--- PASS: TestUploadConnectionFailure (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.505143853+01:00","Action":"pass","Package":"go-file-sender","Test":"TestUploadConnectionFailure","Elapsed":0}
+{"Time":"2026-10-26T18:59:37.505502463+01:00","Action":"output","Package":"go-file-sender","Output":"FAIL\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.505610876+01:00","Action":"output","Package":"go-file-sender","Output":"FAIL\tgo-file-sender\t0.017s\n","OutputType":"frame"}
+{"Time":"2026-10-26T18:59:37.505636474+01:00","Action":"fail","Package":"go-file-sender","Elapsed":0.018}

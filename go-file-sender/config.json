@@ -1,0 +1,4 @@
+{
+  "files_dir": "./files",
+  "service_url": "http://localhost:8030/upload"
+}

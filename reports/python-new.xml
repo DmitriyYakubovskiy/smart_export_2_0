@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="6" time="0.410" timestamp="2026-10-26T18:59:37.330057+01:00" hostname="e448d2f6f34f"><testcase classname="tests.test_regression_contract" name="test_R1_corrupt_content_rejected_before_queue[pdf]" time="0.006"><failure message="AssertionError: Corrupt corrupt.pdf was accepted: HTTP 202&#10;assert 202 == 400&#10; +  where 202 = &lt;Response [202 Accepted]&gt;.status_code">tests/test_regression_contract.py:34: in test_R1_corrupt_content_rejected_before_queue
+    assert response.status_code==400, f'Corrupt {filename} was accepted: HTTP {response.status_code}'
+E   AssertionError: Corrupt corrupt.pdf was accepted: HTTP 202
+E   assert 202 == 400
+E    +  where 202 = &lt;Response [202 Accepted]&gt;.status_code</failure></testcase><testcase classname="tests.test_regression_contract" name="test_R1_corrupt_content_rejected_before_queue[png]" time="0.005"><failure message="AssertionError: Corrupt corrupt.png was accepted: HTTP 202&#10;assert 202 == 400&#10; +  where 202 = &lt;Response [202 Accepted]&gt;.status_code">tests/test_regression_contract.py:34: in test_R1_corrupt_content_rejected_before_queue
+    assert response.status_code==400, f'Corrupt {filename} was accepted: HTTP {response.status_code}'
+E   AssertionError: Corrupt corrupt.png was accepted: HTTP 202
+E   assert 202 == 400
+E    +  where 202 = &lt;Response [202 Accepted]&gt;.status_code</failure></testcase><testcase classname="tests.test_regression_contract" name="test_control_valid_png_still_queued" time="0.010" /><testcase classname="tests.test_regression_contract" name="test_R2_mixed_content_on_same_page_preserves_scan" time="0.024"><failure message="AssertionError: Scanned content lost: {'text': 'HEADER 12345', 'status': 'text_extracted', 'review_required': False, 'empty_pages': [], 'page_count': 1, 'methods': ['pdf_text']}&#10;assert '98765' in 'HEADER 12345'">tests/test_regression_contract.py:58: in test_R2_mixed_content_on_same_page_preserves_scan
+    assert '98765' in result['text'], f'Scanned content lost: {result!r}'
+E   AssertionError: Scanned content lost: {'text': 'HEADER 12345', 'status': 'text_extracted', 'review_required': False, 'empty_pages': [], 'page_count': 1, 'methods': ['pdf_text']}
+E   assert '98765' in 'HEADER 12345'</failure></testcase><testcase classname="tests.test_regression_contract" name="test_R3_same_id_different_content_does_not_overwrite" time="0.006"><failure message="AssertionError: The original was silently overwritten&#10;assert b'different bytes' == b'original bytes'&#10;  &#10;  At index 0 diff: b'd' != b'o'&#10;  Use -v to get more diff">tests/test_regression_contract.py:69: in test_R3_same_id_different_content_does_not_overwrite
+    assert original.read_bytes()==b'original bytes', 'The original was silently overwritten'
+E   AssertionError: The original was silently overwritten
+E   assert b'different bytes' == b'original bytes'
+E     
+E     At index 0 diff: b'd' != b'o'
+E     Use -v to get more diff</failure></testcase><testcase classname="tests.test_regression_contract" name="test_R4_http_retry_with_idempotency_key_has_one_document" time="0.011"><failure message="AssertionError: Retry created another document ID&#10;assert '4592bfa20e62...4e88ae84afe27' == 'f7db6e70f7d4...a2ce756cc5efa'&#10;  &#10;  - f7db6e70f7d4411faa5a2ce756cc5efa&#10;  + 4592bfa20e624dc1a484e88ae84afe27">tests/test_regression_contract.py:79: in test_R4_http_retry_with_idempotency_key_has_one_document
+    assert first.json()['document_id']==second.json()['document_id'], 'Retry created another document ID'
+E   AssertionError: Retry created another document ID
+E   assert '4592bfa20e62...4e88ae84afe27' == 'f7db6e70f7d4...a2ce756cc5efa'
+E     
+E     - f7db6e70f7d4411faa5a2ce756cc5efa
+E     + 4592bfa20e624dc1a484e88ae84afe27</failure></testcase></testsuite></testsuites>

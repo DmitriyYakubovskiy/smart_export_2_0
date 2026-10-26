@@ -1,0 +1,11 @@
+{
+  "status": "text_extracted",
+  "review_required": false,
+  "empty_pages": [],
+  "page_count": 1,
+  "methods": [
+    "tesseract"
+  ],
+  "document_id": "dc52f1e20fff4d6db44173b3fcf95d45",
+  "characters": 3392
+}

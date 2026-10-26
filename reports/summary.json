@@ -1,0 +1,15 @@
+{
+  "python": {
+    "total": 25,
+    "failed": 5
+  },
+  "go": {
+    "total": 16,
+    "failed": 3
+  },
+  "total": {
+    "total": 41,
+    "failed": 8,
+    "passed": 33
+  }
+}

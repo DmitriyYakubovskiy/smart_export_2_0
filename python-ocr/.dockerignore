@@ -1,0 +1,5 @@
+received/
+__pycache__/
+.venv/
+tests/
+*.zip

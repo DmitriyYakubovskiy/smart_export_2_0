@@ -1,0 +1,22 @@
+{
+  "status": "text_extracted",
+  "review_required": false,
+  "empty_pages": [],
+  "page_count": 12,
+  "methods": [
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text",
+    "pdf_text"
+  ],
+  "document_id": "8a7dc60eaa544fb393d90291ed94fb5a",
+  "characters": 38582
+}
