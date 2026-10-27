@@ -1,0 +1,20 @@
+# Run together with compose.yaml. JMeter addresses api:8000 inside Docker.
+services:
+  jmeter:
+    profiles: [load]
+    build: ./jmeter
+    environment:
+      TEST_FILE: ${TEST_FILE:-medical_data_nlp_ru.pdf}
+      USERS: ${USERS:-5}
+      LOOPS: ${LOOPS:-10}
+      RAMP_UP: ${RAMP_UP:-5}
+      DURATION: ${DURATION:-120}
+      PAUSE_MS: ${PAUSE_MS:-200}
+    volumes:
+      - type: bind
+        source: ./jmeter-input
+        target: /input
+        read_only: true
+      - type: bind
+        source: ./jmeter-reports
+        target: /reports
